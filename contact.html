@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — LUXE INTERIORS</title>
+  <meta name="description" content="Get in touch with LUXE INTERIORS for interior design consultations, enquiries, and project discussions. Visit us in Banjara Hills, Hyderabad.">
+  <meta property="og:title" content="Contact Us — LUXE INTERIORS">
+  <meta property="og:description" content="Get in touch for interior design consultations and project discussions.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">LUXE <span>INTERIORS</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="book-consultation.html" class="btn btn-primary btn-sm nav-cta">Book Consultation</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero page-hero" style="background-image: url('https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="section-label">Get In Touch</span>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear about your project</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left - Info -->
+          <div class="contact-info fade-in-left">
+            <h3>Let's Talk Design</h3>
+            <p style="margin-bottom: 32px;">Whether you have a question, want to discuss a project, or just want to say hello — we're here for you.</p>
+
+            <div class="info-item">
+              <div class="icon">📍</div>
+              <div>
+                <h5>Visit Us</h5>
+                <p>123 Design Avenue, Banjara Hills,<br>Hyderabad - 500034, Telangana</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">📞</div>
+              <div>
+                <h5>Call Us</h5>
+                <p>+91 99999 99999</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">✉️</div>
+              <div>
+                <h5>Email Us</h5>
+                <p>hello@luxeinteriors.in</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">🕐</div>
+              <div>
+                <h5>Working Hours</h5>
+                <p>Monday - Saturday: 10:00 AM - 7:00 PM<br>Sunday: By Appointment Only</p>
+              </div>
+            </div>
+
+            <div class="map-embed">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8!2d78.43!3d17.41!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI0JzM2LjAiTiA3OMKwMjUnNDguMCJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" title="LUXE INTERIORS Office Location"></iframe>
+            </div>
+          </div>
+
+          <!-- Right - Form -->
+          <div class="form-card fade-in-right">
+            <h3 style="margin-bottom: 24px;">Send Us an Enquiry</h3>
+            <form id="contactForm" onsubmit="validateContactForm(event)">
+              <div class="form-group">
+                <label for="contactName">Full Name <span class="required">*</span></label>
+                <input type="text" id="contactName" class="form-control" placeholder="Enter your full name">
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="Enter your phone number">
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address <span class="required">*</span></label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="Enter your email address">
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactService">Service Required <span class="required">*</span></label>
+                <select id="contactService" class="form-control">
+                  <option value="">Select a service</option>
+                  <option value="Residential Interior Design">Residential Interior Design</option>
+                  <option value="Commercial Interior Design">Commercial Interior Design</option>
+                  <option value="Office Interiors">Office Interiors</option>
+                  <option value="Modular Kitchen">Modular Kitchen</option>
+                  <option value="Retail Store Design">Retail Store Design</option>
+                  <option value="Restaurant/Cafe Design">Restaurant/Cafe Design</option>
+                  <option value="Renovation">Renovation</option>
+                  <option value="Other">Other</option>
+                </select>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Message <span class="required">*</span></label>
+                <textarea id="contactMessage" class="form-control" placeholder="Tell us about your project..."></textarea>
+                <span class="error-message"></span>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                <button type="button" class="btn btn-outline" onclick="handleContactWhatsApp()">💬 WhatsApp Us</button>
+              </div>
+              <div class="success-message"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="display:inline-block; margin-bottom:16px;">LUXE <span>INTERIORS</span></a>
+          <p>Where Elegance Meets Function. We are a premium interior design studio creating stunning residential and commercial spaces across Hyderabad.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Pinterest">p</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Residential Design</a></li>
+            <li><a href="services.html">Commercial Design</a></li>
+            <li><a href="services.html">Office Interiors</a></li>
+            <li><a href="services.html">Modular Kitchens</a></li>
+            <li><a href="services.html">Retail Spaces</a></li>
+            <li><a href="services.html">Hospitality</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><span class="icon">📍</span> 123 Design Avenue, Banjara Hills, Hyderabad - 500034</li>
+            <li><span class="icon">📞</span> +91 99999 99999</li>
+            <li><span class="icon">✉️</span> hello@luxeinteriors.in</li>
+            <li><span class="icon">🕐</span> Mon - Sat: 10:00 AM - 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LUXE INTERIORS. All Rights Reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919999999999?text=Hello%2C%20I'm%20interested%20in%20your%20interior%20design%20services%20and%20would%20like%20to%20schedule%20a%20consultation." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.9 15.9 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.312 22.594c-.39 1.1-1.932 2.014-3.168 2.28-.846.18-1.95.324-5.67-1.218-4.762-1.972-7.828-6.81-8.066-7.124-.228-.314-1.924-2.562-1.924-4.888 0-2.326 1.218-3.47 1.65-3.942.39-.426 1.024-.618 1.63-.618.196 0 .372.01.53.018.468.02.702.048 1.01.782.39.918 1.338 3.264 1.454 3.502.118.238.236.554.078.868-.148.324-.278.468-.516.74-.238.272-.464.48-.702.774-.216.256-.46.53-.196.998.264.46 1.174 1.936 2.52 3.136 1.734 1.544 3.196 2.024 3.648 2.252.352.176.77.148 1.044-.138.346-.362.774-.962 1.21-1.554.31-.424.702-.478 1.092-.324.396.148 2.506 1.18 2.936 1.396.43.216.716.324.82.504.104.18.104 1.05-.286 2.15z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

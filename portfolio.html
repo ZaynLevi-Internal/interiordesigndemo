@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — LUXE INTERIORS</title>
+  <meta name="description" content="Explore LUXE INTERIORS portfolio — 500+ completed residential and commercial interior design projects across Hyderabad.">
+  <meta property="og:title" content="Portfolio — LUXE INTERIORS">
+  <meta property="og:description" content="Explore our portfolio of 500+ completed interior design projects.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">LUXE <span>INTERIORS</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="testimonials.html" class="nav-link">Testimonials</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="book-consultation.html" class="btn btn-primary btn-sm nav-cta">Book Consultation</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero page-hero" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="section-label">Our Work</span>
+        <h1>Our Portfolio</h1>
+        <p>Discover our latest interior design transformations</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="residential">Residential</button>
+          <button class="filter-tab" data-filter="commercial">Commercial</button>
+          <button class="filter-tab" data-filter="offices">Offices</button>
+          <button class="filter-tab" data-filter="villas">Villas</button>
+          <button class="filter-tab" data-filter="retail">Retail</button>
+          <button class="filter-tab" data-filter="hospitality">Hospitality</button>
+        </div>
+
+        <div class="grid-3">
+          <div class="portfolio-item portfolio-card fade-in" data-category="residential" onclick="openProjectModal({title:'Modern Villa Makeover',overview:'A complete transformation of a 4500 sq.ft. villa into a contemporary modern home with open-plan living and luxury finishes.',scope:'Full Interior Design, Furniture, Lighting, Landscaping',materials:'Italian Marble, Teak Wood, Imported Wallpapers',timeline:'4 Months',images:['https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80','https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80','https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Modern Villa Makeover in Jubilee Hills">
+            <div class="portfolio-overlay">
+              <span class="badge">Residential</span>
+              <h4>Modern Villa Makeover</h4>
+              <span class="location">📍 Jubilee Hills, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="commercial" onclick="openProjectModal({title:'Tech Corporate Office',overview:'A 15,000 sq.ft. modern corporate office designed for a leading IT company with collaborative workspaces and breakout zones.',scope:'Space Planning, Interior Design, MEP, Furniture',materials:'Acoustic Panels, Engineered Wood, Glass Partitions',timeline:'3 Months',images:['https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80','https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=600&q=80','https://images.unsplash.com/photo-1497215842964-222b430dc094?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Tech Corporate Office in HITEC City">
+            <div class="portfolio-overlay">
+              <span class="badge">Commercial</span>
+              <h4>Tech Corporate Office</h4>
+              <span class="location">📍 HITEC City, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="villas" onclick="openProjectModal({title:'Luxury Penthouse',overview:'An opulent 3500 sq.ft. penthouse with panoramic city views, featuring bespoke furniture and premium Italian marble flooring.',scope:'Complete Interior Design, Custom Furniture, Smart Home',materials:'Calacatta Marble, Walnut Wood, Brass Accents',timeline:'5 Months',images:['https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80','https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=600&q=80','https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Luxury Penthouse in Banjara Hills">
+            <div class="portfolio-overlay">
+              <span class="badge">Villas</span>
+              <h4>Luxury Penthouse</h4>
+              <span class="location">📍 Banjara Hills, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="offices" onclick="openProjectModal({title:'Startup Hub Workspace',overview:'A vibrant, open-plan coworking space for 150+ professionals with hot desks, meeting rooms, and recreation zones.',scope:'Interior Design, MEP, Furniture, Branding',materials:'Polished Concrete, Steel, Recycled Wood',timeline:'2.5 Months',images:['https://images.unsplash.com/photo-1497215842964-222b430dc094?w=600&q=80','https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=600&q=80','https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=800&q=80" alt="Startup Hub Workspace in Gachibowli">
+            <div class="portfolio-overlay">
+              <span class="badge">Offices</span>
+              <h4>Startup Hub Workspace</h4>
+              <span class="location">📍 Gachibowli, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="retail" onclick="openProjectModal({title:'Fashion Boutique Store',overview:'A high-end fashion retail space with minimal aesthetics, custom display systems, and mood lighting.',scope:'Interior Design, Visual Merchandising, Lighting',materials:'Brass, Velvet, Oak Wood, Custom Glass',timeline:'2 Months',images:['https://images.unsplash.com/photo-1604176354204-9268737828e4?w=600&q=80','https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80','https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=800&q=80" alt="Fashion Boutique Store in Jubilee Hills">
+            <div class="portfolio-overlay">
+              <span class="badge">Retail</span>
+              <h4>Fashion Boutique Store</h4>
+              <span class="location">📍 Road No. 36, Jubilee Hills</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="hospitality" onclick="openProjectModal({title:'Boutique Hotel Renovation',overview:'Complete renovation of a 30-room boutique hotel with themed suites, spa, and rooftop restaurant.',scope:'Full Interior Design, Furniture, Art Curation',materials:'Teak, Jute, Handmade Tiles, Local Art',timeline:'6 Months',images:['https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80','https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80','https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Boutique Hotel in Begumpet">
+            <div class="portfolio-overlay">
+              <span class="badge">Hospitality</span>
+              <h4>Boutique Hotel Renovation</h4>
+              <span class="location">📍 Begumpet, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+
+          <div class="portfolio-item portfolio-card fade-in" data-category="residential" onclick="openProjectModal({title:'Contemporary 3BHK Apartment',overview:'A sleek 1800 sq.ft. apartment designed with a contemporary aesthetic, smart storage, and modular kitchen.',scope:'Complete Interior Design, Modular Kitchen, Wardrobes',materials:'Veneer, Acrylic, Quartz Countertops',timeline:'2.5 Months',images:['https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=600&q=80','https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80','https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80" alt="Contemporary 3BHK Apartment in Kondapur">
+            <div class="portfolio-overlay">
+              <span class="badge">Residential</span>
+              <h4>Contemporary 3BHK Apartment</h4>
+              <span class="location">📍 Kondapur, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="commercial" onclick="openProjectModal({title:'Fine Dining Restaurant',overview:'An elegant 5000 sq.ft. fine dining restaurant with private dining areas, bar, and chef table experience.',scope:'Interior Design, Kitchen Layout, Lighting, Acoustics',materials:'Dark Wood, Leather, Copper, Stone',timeline:'3.5 Months',images:['https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80','https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80','https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Fine Dining Restaurant in Banjara Hills">
+            <div class="portfolio-overlay">
+              <span class="badge">Commercial</span>
+              <h4>Fine Dining Restaurant</h4>
+              <span class="location">📍 Banjara Hills, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="villas" onclick="openProjectModal({title:'Minimalist Farmhouse Villa',overview:'A 6000 sq.ft. farmhouse villa with minimalist interiors, floor-to-ceiling windows, and indoor garden.',scope:'Architecture, Interior Design, Landscape, Pool',materials:'Concrete, Wood, Large-format Tiles, Natural Stone',timeline:'8 Months',images:['https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80','https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&q=80','https://images.unsplash.com/photo-1600566753376-12c8ab7c3a6e?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Minimalist Farmhouse Villa near Shamshabad">
+            <div class="portfolio-overlay">
+              <span class="badge">Villas</span>
+              <h4>Minimalist Farmhouse Villa</h4>
+              <span class="location">📍 Shamshabad, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="offices" onclick="openProjectModal({title:'Law Firm Office',overview:'A sophisticated 3000 sq.ft. law firm with private cabins, conference rooms, and library.',scope:'Interior Design, Custom Furniture, Lighting',materials:'Mahogany, Leather, Green Marble, Brass',timeline:'2 Months',images:['https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=600&q=80','https://images.unsplash.com/photo-1497215842964-222b430dc094?w=600&q=80','https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=800&q=80" alt="Law Firm Office in Somajiguda">
+            <div class="portfolio-overlay">
+              <span class="badge">Offices</span>
+              <h4>Law Firm Office</h4>
+              <span class="location">📍 Somajiguda, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="retail" onclick="openProjectModal({title:'Jewelry Showroom',overview:'A premium 2500 sq.ft. jewelry showroom with custom display cases, VIP lounge, and advanced security.',scope:'Interior Design, Display Systems, Lighting, Security',materials:'Black Granite, Gold Accents, Velvet, LED Systems',timeline:'3 Months',images:['https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80','https://images.unsplash.com/photo-1604176354204-9268737828e4?w=600&q=80','https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="Jewelry Showroom in Himayat Nagar">
+            <div class="portfolio-overlay">
+              <span class="badge">Retail</span>
+              <h4>Jewelry Showroom</h4>
+              <span class="location">📍 Himayat Nagar, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-card fade-in" data-category="hospitality" onclick="openProjectModal({title:'Spa & Wellness Center',overview:'A tranquil 4000 sq.ft. spa with treatment rooms, steam rooms, relaxation areas, and zen garden.',scope:'Interior Design, Lighting, HVAC, Landscaping',materials:'Bamboo, Stone, Water Features, Aromatic Wood',timeline:'4 Months',images:['https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80','https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80','https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80']})">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="Spa and Wellness Center in Madhapur">
+            <div class="portfolio-overlay">
+              <span class="badge">Hospitality</span>
+              <h4>Spa & Wellness Center</h4>
+              <span class="location">📍 Madhapur, Hyderabad</span>
+              <span class="btn btn-primary btn-sm view-btn">View Details</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container fade-in">
+        <h2>Like What You See?</h2>
+        <p>Let's create something extraordinary for your space.</p>
+        <a href="book-consultation.html" class="btn btn-primary btn-lg">Start Your Project</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="projectModal" onclick="if(event.target===this)closeProjectModal()">
+    <div class="modal">
+      <button class="modal-close" onclick="closeProjectModal()">✕</button>
+      <div class="modal-gallery" id="modalGallery"></div>
+      <h3 id="modalTitle"></h3>
+      <p id="modalOverview"></p>
+      <div class="detail-row">
+        <div class="detail-item">
+          <h5>Scope</h5>
+          <p id="modalScope"></p>
+        </div>
+        <div class="detail-item">
+          <h5>Materials Used</h5>
+          <p id="modalMaterials"></p>
+        </div>
+        <div class="detail-item">
+          <h5>Timeline</h5>
+          <p id="modalTimeline"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="display:inline-block; margin-bottom:16px;">LUXE <span>INTERIORS</span></a>
+          <p>Where Elegance Meets Function. We are a premium interior design studio creating stunning residential and commercial spaces across Hyderabad.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Pinterest">p</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Residential Design</a></li>
+            <li><a href="services.html">Commercial Design</a></li>
+            <li><a href="services.html">Office Interiors</a></li>
+            <li><a href="services.html">Modular Kitchens</a></li>
+            <li><a href="services.html">Retail Spaces</a></li>
+            <li><a href="services.html">Hospitality</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><span class="icon">📍</span> 123 Design Avenue, Banjara Hills, Hyderabad - 500034</li>
+            <li><span class="icon">📞</span> +91 99999 99999</li>
+            <li><span class="icon">✉️</span> hello@luxeinteriors.in</li>
+            <li><span class="icon">🕐</span> Mon - Sat: 10:00 AM - 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 LUXE INTERIORS. All Rights Reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919999999999?text=Hello%2C%20I'm%20interested%20in%20your%20interior%20design%20services%20and%20would%20like%20to%20schedule%20a%20consultation." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.9 15.9 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.312 22.594c-.39 1.1-1.932 2.014-3.168 2.28-.846.18-1.95.324-5.67-1.218-4.762-1.972-7.828-6.81-8.066-7.124-.228-.314-1.924-2.562-1.924-4.888 0-2.326 1.218-3.47 1.65-3.942.39-.426 1.024-.618 1.63-.618.196 0 .372.01.53.018.468.02.702.048 1.01.782.39.918 1.338 3.264 1.454 3.502.118.238.236.554.078.868-.148.324-.278.468-.516.74-.238.272-.464.48-.702.774-.216.256-.46.53-.196.998.264.46 1.174 1.936 2.52 3.136 1.734 1.544 3.196 2.024 3.648 2.252.352.176.77.148 1.044-.138.346-.362.774-.962 1.21-1.554.31-.424.702-.478 1.092-.324.396.148 2.506 1.18 2.936 1.396.43.216.716.324.82.504.104.18.104 1.05-.286 2.15z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initPortfolioFilter();
+    });
+  </script>
+</body>
+</html>
