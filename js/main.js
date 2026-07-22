@@ -1,5 +1,5 @@
 /* ============================================================
-   LUXE INTERIORS — Main JavaScript
+   MSI Elite Design Studio — Main JavaScript
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {

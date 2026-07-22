@@ -1,5 +1,5 @@
 /* ============================================================
-   LUXE INTERIORS — Forms Validation & WhatsApp Integration
+   MSI Elite Design Studio — Forms Validation & WhatsApp Integration
    ============================================================ */
 
 const WHATSAPP_NUMBER = '919999999999';

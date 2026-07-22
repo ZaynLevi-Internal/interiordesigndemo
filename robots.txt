@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.luxeinteriors.in/sitemap.xml
+Sitemap: https://www.msielitedesign.in/sitemap.xml
 
 # Disallow admin and private directories
 Disallow: /admin/
